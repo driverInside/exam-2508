@@ -17,7 +17,7 @@ El examen constará de dos partes: una teórica y una práctica.
 
 La parte teórica constará de 3 preguntas y representará el 20% de la calificación total.
 
-La parte práctica constará de un ejercicio, ya sea en javascript o en python y representaría el 60% de la calificación total.
+La parte práctica constará de un ejercicio, ya sea en javascript o en python y representaría el 80% de la calificación total.
 
 ### Prerequisites
 
@@ -175,7 +175,7 @@ $ cd python
 Para correr los tests, se ejecuta:
 
 ```bash
-$ python3 tests.js
+$ python3 test.py
 
 ..
 ----------------------------------------------------------------------
