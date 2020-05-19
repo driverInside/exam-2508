@@ -1,38 +1,34 @@
 /**
  * index.js
- * 
- * Instrucciones: escribir una función que reciba una cadena y 
- * determine si esta es un palíndromo o no.
- * 
- * Consideraciones: 
- * 
- * - La función debería de regresar un valor booleano
- * - La función puede recibir una cadena vacía
- * 
+ *
+ * Instrucciones: Escriba una función en la que dados
+ * un arreglo y un número entero, divida al arreglo en
+ * tantos sub arreglos de longitud (tamaño) indique el segundo
+ * número.
  * 
  * Ejemplos:
  * 
- * esPalindromo('ana') // true
- * esPalindromo('aabbcc') // false
- * esPalindromo('()()') // false
- * esPalindromo('arroz') // false
- * esPalindromo('') // false
+ * divideArreglo([1, 2, 3, 4], 2) --> [[ 1, 2], [3, 4]
+ * divideArreglo([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]
+ * divideArreglo([1, 2, 3, 4, 5, 6, 7, 8], 3) --> [[ 1, 2, 3], [4, 5, 6], [7, 8]]
+ * divideArreglo([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
+ * divideArreglo([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
+ *
+ * Consideraciones:
  * 
+ * El segúndo parámetro, indica el tamaño de los subarreglos, no la cantidad
+ *   de subarreglos resultantes
  * 
  */
 
-function esPalindromo(str) {
-  if (str === '') { // O(1)
-    return false
-  }
-  
-  for (let i = 0, j = str.length -1; i < str.length / 2; i++, j--) {
-    if (str[i] !== str[j]) {
-      return false
-    } // o(1)
-  } // o(n/2) * O(1) = O(n/2)
+/**
+ * divideArreglo
+ * @param {Array} arr - List of integers
+ * @param {Integer} size - Size of the chunks
+ * @returns {Array} - List of chunks
+ */
+function divideArreglo(arr, size) {
+  return []
+} // 
 
-  return true
-} // O(1) + O(n/2) -> 1/2 * O(n)
-
-module.exports = esPalindromo
+module.exports = divideArreglo

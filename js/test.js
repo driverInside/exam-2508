@@ -1,25 +1,38 @@
-const esPalindromo = require('./index')
+const divideArreglo = require('./index')
 
-describe('Examen. Tests de la función', () => {
-  it('esPalindromo debería de estar definido', () => {
-    expect(esPalindromo).toBeDefined()
+describe('Examen: Función divideArreglo', () => {
+  it('Debería de dividir un arreglo de 10 elementos en subarreglos de 2 de longitud', () => {
+    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const result = divideArreglo(arr, 2);
+
+    expect(result).toEqual([[1, 2], [3, 4], [5, 6], [7, 8], [9, 10]])
   })
 
-  it('La función debería aceptar una cadena vacía', () => {
-    expect(esPalindromo('')).toBe(false)
+  it('Debería de dividir el arreglo en subarreglos de 1', () => {
+    const arr = [1, 2, 3];
+    const result = divideArreglo(arr, 1);
+
+    expect(result).toEqual([[1], [2], [3]])
   })
 
-  it('La función debería de regresar un booleano', () => {
-    const result = esPalindromo('foo')
-    expect(typeof result).toBe('boolean')    
+  it('Debería dividir el arreglo en subarreglos de 3', () => {
+    const arr = [1, 2, 3, 4, 5]
+    const result = divideArreglo(arr, 3)
+  
+    expect(result).toEqual([[1, 2, 3], [4, 5]])
+  })
+  
+  it('Debería de dividir el arreglo en subarreglos de 5', () => {
+    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    const result = divideArreglo(arr, 5)
+  
+    expect(result).toEqual([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13]])
   })
 
-  it('La función debería de determinar si la cadena recibida es un palíndromo o no', () => {
-    expect(esPalindromo('ana')).toBe(true)
-    expect(esPalindromo('arroz')).toBe(false)
-    expect(esPalindromo('')).toBe(false)
-    expect(esPalindromo('()()')).toBe(false)
-    expect(esPalindromo('ico')).toBe(false)
-    expect(esPalindromo('09890')).toBe(true)
+  it('Debería de dividir el arreglo en subarreglos de 10', () => {
+    const arr = [1, 2, 3, 4, 5]
+    const result = divideArreglo(arr, 10)
+  
+    expect(result).toEqual([[ 1, 2, 3, 4, 5]])
   })
 })

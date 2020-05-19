@@ -9,13 +9,13 @@ Examen parcial para el grupo 2508 de la materia de Análisis y diseño de algori
 * [First part](#First-part)
 * [Second part](#Second-part)
     * [Running the tests](#Running-the-tests)
-* [Getting Started](#Getting-Started)
+
 
 ## Getting Started
 
 El examen constará de dos partes: una teórica y una práctica.
 
-La parte teórica constará de 5 preguntas y representará el 40% de la calificación total.
+La parte teórica constará de 3 preguntas y representará el 20% de la calificación total.
 
 La parte práctica constará de un ejercicio, ya sea en javascript o en python y representaría el 60% de la calificación total.
 
@@ -59,13 +59,15 @@ Esto creará una carpeta llamada `exam-2508`.
 
 ## First part
 
-Explain how to run the automated tests for this system
+La parte teórica del examen constará de 3 preguntas que se deberán responder y desarrollar según corresponda.
+
+Dichas preguntas se encuentran en el archivo `questions.txt`.
 
 ## Second part
 
 La parte práctica del examen consta de diseñar una solución e implementarla dentro de un programa así como el cálculo de su complejidad en función al tiempo que tarda (teórico) en ejecutar la tarea específica.
 
-Para considerar la solución propuesta como funcional y así poder acreditar satisfactoriamente esta parte del examen, se deben de pasar todas las pruebas que se aplicarán al programa así como el **análisis del algoritmo implementado** debidamente desarrollado parte por parte y luego simplificado (si es que aplica); **dicho análisis deberá ser agregado dentro del código como comentarios**.
+Para considerar la solución propuesta como funcional y así poder acreditar satisfactoriamente esta parte del examen, se deben de pasar todas las pruebas que se aplicarán al programa así como el **análisis del algoritmo implementado** debidamente desarrollado parte por parte y luego simplificado (si es que aplica); **dicho análisis deberá ser agregado dentro del código como comentarios**; además se deben incluir diagrama de flujo y pseudocódigo.
 
 **Se considerarán respuestas parciales** y la calificación sera calculada de la siguiente forma:
 
@@ -162,3 +164,22 @@ $ jest test.js --watch
 La opción `--watch` correrá los tests cada vez que se guarde un nuevo cambio realizado en el archivo `index.js`.
 
 Instrucciones para `Python`:
+
+Ingresar al directorio `python`:
+
+```bash
+$ cd exam-2508
+$ cd python
+```
+
+Para correr los tests, se ejecuta:
+
+```bash
+$ python3 tests.js
+
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+```
