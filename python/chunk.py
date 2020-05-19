@@ -20,5 +20,4 @@
 
 '''
 def divideArreglo(size, *arr):
-    result = []
-    return result
+  return []
